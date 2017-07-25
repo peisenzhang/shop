@@ -1,0 +1,1151 @@
+[ 2017-05-24T09:39:55+08:00 ] 127.0.0.1 /index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026688s ]
+SQL: DESCRIBE shop_category [ RunTime:0.063675s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001588s ]
+SQL: DESCRIBE shop_goods [ RunTime:0.076643s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`promote_price` FROM `shop_goods` WHERE ( `is_on_sale` = '是' ) AND ( `promote_price` > 0 ) AND ( `promote_start_date` <= '2017-05-24 09:39' ) AND ( `promote_end_date` >= '2017-05-24 09:39' ) LIMIT 5   [ RunTime:0.003214s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `shop_goods` WHERE ( `is_on_sale` = '是' ) AND ( `is_new` = '是' )  [ RunTime:0.002025s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `shop_goods` WHERE ( `is_on_sale` = '是' ) AND ( `is_hot` = '是' )  [ RunTime:0.002335s ]
+SQL: SELECT `id`,`goods_name`,`mid_logo`,`shop_price` FROM `shop_goods` WHERE ( `is_on_sale` = '是' ) AND ( `is_best` = '是' )  [ RunTime:0.001371s ]
+SQL: DESCRIBE shop_category [ RunTime:0.019230s ]
+SQL: SELECT * FROM `shop_category` WHERE ( `is_floor` = '是' ) AND ( `parent_id` = 0 )  [ RunTime:0.001279s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001161s ]
+SQL: SELECT `id` FROM `shop_goods` WHERE ( `id` IN (16,17,22,18,19,20,1) )  [ RunTime:0.001174s ]
+SQL: DESCRIBE shop_goods_cat [ RunTime:0.028917s ]
+SQL: SELECT DISTINCT goods_id  id FROM `shop_goods_cat` WHERE ( `cat_id` = 1 )  [ RunTime:0.001601s ]
+SQL: SELECT * FROM shop_goods a LEFT JOIN shop_brand b ON b.id=a.brand_id  WHERE ( a.id IN (5,4,6) ) AND ( a.brand_id <> 0 ) LIMIT 9   [ RunTime:0.026310s ]
+SQL: SELECT * FROM `shop_category` WHERE ( `parent_id` = 1 ) AND ( `is_floor` = '否' )  [ RunTime:0.001206s ]
+SQL: SELECT * FROM `shop_category` WHERE ( `parent_id` = 1 ) AND ( `is_floor` = '是' )  [ RunTime:0.000967s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.000959s ]
+SQL: SELECT `id` FROM `shop_goods` WHERE ( `id` IN (16,17,22,18,19,20,16) )  [ RunTime:0.001132s ]
+SQL: SELECT DISTINCT goods_id  id FROM `shop_goods_cat` WHERE ( `cat_id` = 16 )  [ RunTime:0.001316s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = '是' ) AND ( `is_floor` = '是' ) AND ( `id` IN (5,4) )  [ RunTime:0.001439s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001107s ]
+SQL: SELECT `id` FROM `shop_goods` WHERE ( `id` IN (16,17,22,18,19,20,21,2) )  [ RunTime:0.001027s ]
+SQL: SELECT DISTINCT goods_id  id FROM `shop_goods_cat` WHERE ( `cat_id` = 2 )  [ RunTime:0.001266s ]
+SQL: SELECT * FROM shop_goods a LEFT JOIN shop_brand b ON b.id=a.brand_id  WHERE ( a.id IN (5) ) AND ( a.brand_id <> 0 ) LIMIT 9   [ RunTime:0.001456s ]
+SQL: SELECT * FROM `shop_category` WHERE ( `parent_id` = 2 ) AND ( `is_floor` = '否' )  [ RunTime:0.001015s ]
+SQL: SELECT * FROM `shop_category` WHERE ( `parent_id` = 2 ) AND ( `is_floor` = '是' )  [ RunTime:0.000983s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 147 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000696s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001133s ]
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 501 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 506 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002712s ]
+
+[ 2017-05-24T09:39:56+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002818s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003117s ]
+
+[ 2017-05-24T10:19:57+08:00 ] 127.0.0.1 /index.php/Home/search/goods_search/cat_id/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002773s ]
+SQL: DESCRIBE shop_category [ RunTime:0.018552s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001253s ]
+SQL: DESCRIBE shop_goods [ RunTime:0.020032s ]
+SQL: DESCRIBE shop_category [ RunTime:0.018690s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001143s ]
+SQL: SELECT `id` FROM `shop_goods` WHERE ( `id` IN (17,22,'16') )  [ RunTime:0.001001s ]
+SQL: DESCRIBE shop_goods_cat [ RunTime:0.017468s ]
+SQL: SELECT DISTINCT goods_id  id FROM `shop_goods_cat` WHERE ( `cat_id` = '16' )  [ RunTime:0.001597s ]
+NOTIC: [8] Undefined variable: brand_id D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 628 行.
+SQL: DESCRIBE shop_goods_attr [ RunTime:0.104960s ]
+SQL: SELECT count(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM shop_goods a WHERE ( a.id IN (5,4) ) LIMIT 1   [ RunTime:0.032774s ]
+SQL: SELECT a.id,a.goods_name,a.shop_price,a.mid_logo,sum(b.goods_number) x1 FROM shop_goods a LEFT JOIN shop_goods_order b ON (b.goods_id=a.id AND b.order_id IN(SELECT id FROM shop_order WHERE pay_status='是'))  WHERE ( a.id IN (5,4) ) GROUP BY a.id ORDER BY X1 desc LIMIT 0,3   [ RunTime:0.038834s ]
+SQL: SELECT b.id,b.brand_name,b.logo FROM shop_goods a LEFT JOIN shop_brand b ON b.id=a.brand_id  WHERE ( a.id IN ('4','5') ) AND ( a.brand_id <> 0 ) GROUP BY b.id  [ RunTime:0.002025s ]
+SQL: SELECT max(shop_price) max_price,min(shop_price) min_price FROM `shop_goods` WHERE ( `id` IN ('4','5') ) LIMIT 1   [ RunTime:0.001217s ]
+SQL: SELECT DISTINCT  a.attr_id,a.attr_value,b.attr_name FROM shop_goods_attr a LEFT JOIN shop_attribute b ON b.id=a.attr_id  WHERE ( a.goods_id IN ('4','5') )  [ RunTime:0.038001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000766s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001196s ]
+NOTIC: [8] Undefined variable: _show_nav D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 145 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: attr_1 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Undefined index: attr_2 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Undefined index: attr_3 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Undefined index: attr_4 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Use of undefined constant X1 - assumed 'X1' D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 468 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001964s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002401s ]
+
+[ 2017-05-24T10:19:57+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002666s ]
+
+[ 2017-05-24T10:20:00+08:00 ] 127.0.0.1 /index.php/Home/search/goods_search/cat_id/16/brand_id/1-%E5%8D%8E%E4%B8%BA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000195s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002525s ]
+SQL: DESCRIBE shop_category [ RunTime:0.021480s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001621s ]
+SQL: DESCRIBE shop_goods [ RunTime:0.021587s ]
+SQL: DESCRIBE shop_category [ RunTime:0.020546s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001776s ]
+SQL: SELECT `id` FROM `shop_goods` WHERE ( `id` IN (17,22,'16') )  [ RunTime:0.001303s ]
+SQL: DESCRIBE shop_goods_cat [ RunTime:0.019612s ]
+SQL: SELECT DISTINCT goods_id  id FROM `shop_goods_cat` WHERE ( `cat_id` = '16' )  [ RunTime:0.001745s ]
+NOTIC: [8] Undefined variable: brand_id D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 628 行.
+SQL: DESCRIBE shop_goods_attr [ RunTime:0.019406s ]
+SQL: SELECT count(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM shop_goods a WHERE ( a.id IN (5,4) ) LIMIT 1   [ RunTime:0.001633s ]
+SQL: SELECT a.id,a.goods_name,a.shop_price,a.mid_logo,sum(b.goods_number) x1 FROM shop_goods a LEFT JOIN shop_goods_order b ON (b.goods_id=a.id AND b.order_id IN(SELECT id FROM shop_order WHERE pay_status='是'))  WHERE ( a.id IN (5,4) ) GROUP BY a.id ORDER BY X1 desc LIMIT 0,3   [ RunTime:0.002186s ]
+SQL: SELECT b.id,b.brand_name,b.logo FROM shop_goods a LEFT JOIN shop_brand b ON b.id=a.brand_id  WHERE ( a.id IN ('4','5') ) AND ( a.brand_id <> 0 ) GROUP BY b.id  [ RunTime:0.001812s ]
+SQL: SELECT max(shop_price) max_price,min(shop_price) min_price FROM `shop_goods` WHERE ( `id` IN ('4','5') ) LIMIT 1   [ RunTime:0.001178s ]
+SQL: SELECT DISTINCT  a.attr_id,a.attr_value,b.attr_name FROM shop_goods_attr a LEFT JOIN shop_attribute b ON b.id=a.attr_id  WHERE ( a.goods_id IN ('4','5') )  [ RunTime:0.001902s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000833s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001266s ]
+NOTIC: [8] Undefined variable: _show_nav D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 145 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: attr_1 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Undefined index: attr_2 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Undefined index: attr_3 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Undefined index: attr_4 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Use of undefined constant X1 - assumed 'X1' D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 468 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001921s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002545s ]
+
+[ 2017-05-24T10:20:01+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002993s ]
+
+[ 2017-05-24T10:20:35+08:00 ] 127.0.0.1 /index.php/Home/search/goods_search/cat_id/16/brand_id/1-%E5%8D%8E%E4%B8%BA/price/200.00-233
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002053s ]
+SQL: DESCRIBE shop_category [ RunTime:0.019026s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001390s ]
+SQL: DESCRIBE shop_goods [ RunTime:0.018271s ]
+SQL: DESCRIBE shop_category [ RunTime:0.017032s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001148s ]
+SQL: SELECT `id` FROM `shop_goods` WHERE ( `id` IN (17,22,'16') )  [ RunTime:0.001048s ]
+SQL: DESCRIBE shop_goods_cat [ RunTime:0.017051s ]
+SQL: SELECT DISTINCT goods_id  id FROM `shop_goods_cat` WHERE ( `cat_id` = '16' )  [ RunTime:0.001682s ]
+NOTIC: [8] Undefined variable: brand_id D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 628 行.
+SQL: DESCRIBE shop_goods_attr [ RunTime:0.017087s ]
+SQL: SELECT count(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM shop_goods a WHERE ( a.id IN (5,4) ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) LIMIT 1   [ RunTime:0.069787s ]
+SQL: SELECT a.id,a.goods_name,a.shop_price,a.mid_logo,sum(b.goods_number) x1 FROM shop_goods a LEFT JOIN shop_goods_order b ON (b.goods_id=a.id AND b.order_id IN(SELECT id FROM shop_order WHERE pay_status='是'))  WHERE ( a.id IN (5,4) ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) GROUP BY a.id ORDER BY X1 desc LIMIT 0,3   [ RunTime:0.002099s ]
+SQL: SELECT b.id,b.brand_name,b.logo FROM shop_goods a LEFT JOIN shop_brand b ON b.id=a.brand_id  WHERE ( a.id IN ('4') ) AND ( a.brand_id <> 0 ) GROUP BY b.id  [ RunTime:0.001551s ]
+SQL: SELECT max(shop_price) max_price,min(shop_price) min_price FROM `shop_goods` WHERE ( `id` IN ('4') ) LIMIT 1   [ RunTime:0.001212s ]
+SQL: SELECT DISTINCT  a.attr_id,a.attr_value,b.attr_name FROM shop_goods_attr a LEFT JOIN shop_attribute b ON b.id=a.attr_id  WHERE ( a.goods_id IN ('4') )  [ RunTime:0.001798s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000763s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001174s ]
+NOTIC: [8] Undefined variable: _show_nav D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 145 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: attr_1 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Undefined index: attr_2 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Undefined index: attr_3 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Undefined index: attr_4 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Use of undefined constant X1 - assumed 'X1' D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 468 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001913s ]
+
+[ 2017-05-24T10:20:35+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002458s ]
+
+[ 2017-05-24T10:20:43+08:00 ] 127.0.0.1 /index.php/Home/search/goods_search/cat_id/16/brand_id/1-%E5%8D%8E%E4%B8%BA/price/200.00-233/attr_2/23-%E5%AE%9A%E4%BB%B7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002639s ]
+SQL: DESCRIBE shop_category [ RunTime:0.018872s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001198s ]
+SQL: DESCRIBE shop_goods [ RunTime:0.018281s ]
+SQL: DESCRIBE shop_category [ RunTime:0.017439s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001160s ]
+SQL: SELECT `id` FROM `shop_goods` WHERE ( `id` IN (17,22,'16') )  [ RunTime:0.000925s ]
+SQL: DESCRIBE shop_goods_cat [ RunTime:0.018055s ]
+SQL: SELECT DISTINCT goods_id  id FROM `shop_goods_cat` WHERE ( `cat_id` = '16' )  [ RunTime:0.001752s ]
+NOTIC: [8] Undefined variable: brand_id D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 628 行.
+SQL: DESCRIBE shop_goods_attr [ RunTime:0.018055s ]
+NOTIC: [8] Undefined variable: attr_name D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 640 行.
+SQL: SELECT GROUP_CONCAT(goods_id) gids FROM `shop_goods_attr` WHERE ( `attr_id` = '2' ) AND ( `attr_value` = '23-定价' ) LIMIT 1   [ RunTime:0.001714s ]
+SQL: SELECT count(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM shop_goods a WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) LIMIT 1   [ RunTime:0.001079s ]
+SQL: SELECT a.id,a.goods_name,a.shop_price,a.mid_logo,sum(b.goods_number) x1 FROM shop_goods a LEFT JOIN shop_goods_order b ON (b.goods_id=a.id AND b.order_id IN(SELECT id FROM shop_order WHERE pay_status='是'))  WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) GROUP BY a.id ORDER BY X1 desc LIMIT 0,3   [ RunTime:0.001347s ]
+SQL: SELECT b.id,b.brand_name,b.logo FROM shop_goods a LEFT JOIN shop_brand b ON b.id=a.brand_id  WHERE ( a.id IN ('') ) AND ( a.brand_id <> 0 ) GROUP BY b.id  [ RunTime:0.001071s ]
+SQL: SELECT max(shop_price) max_price,min(shop_price) min_price FROM `shop_goods` WHERE ( `id` IN ('') ) LIMIT 1   [ RunTime:0.001034s ]
+SQL: SELECT DISTINCT  a.attr_id,a.attr_value,b.attr_name FROM shop_goods_attr a LEFT JOIN shop_attribute b ON b.id=a.attr_id  WHERE ( a.goods_id IN ('') )  [ RunTime:0.001525s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 220 行.
+NOTIC: [8] Undefined variable: _gaData D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 223 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000767s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001168s ]
+NOTIC: [8] Undefined variable: _show_nav D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 145 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Use of undefined constant X1 - assumed 'X1' D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 468 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 485 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002349s ]
+
+[ 2017-05-24T10:20:44+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002915s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002558s ]
+
+[ 2017-05-24T10:20:50+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002874s ]
+
+[ 2017-05-24T10:20:58+08:00 ] 127.0.0.1 /index.php/Home/search/goods_search/cat_id/16/brand_id/1-%E5%8D%8E%E4%B8%BA/price/200.00-233
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002499s ]
+SQL: DESCRIBE shop_category [ RunTime:0.018071s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001294s ]
+SQL: DESCRIBE shop_goods [ RunTime:0.018569s ]
+SQL: DESCRIBE shop_category [ RunTime:0.017184s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001177s ]
+SQL: SELECT `id` FROM `shop_goods` WHERE ( `id` IN (17,22,'16') )  [ RunTime:0.001064s ]
+SQL: DESCRIBE shop_goods_cat [ RunTime:0.018010s ]
+SQL: SELECT DISTINCT goods_id  id FROM `shop_goods_cat` WHERE ( `cat_id` = '16' )  [ RunTime:0.001497s ]
+NOTIC: [8] Undefined variable: brand_id D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 628 行.
+SQL: DESCRIBE shop_goods_attr [ RunTime:0.017715s ]
+SQL: SELECT count(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM shop_goods a WHERE ( a.id IN (5,4) ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) LIMIT 1   [ RunTime:0.001561s ]
+SQL: SELECT a.id,a.goods_name,a.shop_price,a.mid_logo,sum(b.goods_number) x1 FROM shop_goods a LEFT JOIN shop_goods_order b ON (b.goods_id=a.id AND b.order_id IN(SELECT id FROM shop_order WHERE pay_status='是'))  WHERE ( a.id IN (5,4) ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) GROUP BY a.id ORDER BY X1 desc LIMIT 0,3   [ RunTime:0.001885s ]
+SQL: SELECT b.id,b.brand_name,b.logo FROM shop_goods a LEFT JOIN shop_brand b ON b.id=a.brand_id  WHERE ( a.id IN ('4') ) AND ( a.brand_id <> 0 ) GROUP BY b.id  [ RunTime:0.001291s ]
+SQL: SELECT max(shop_price) max_price,min(shop_price) min_price FROM `shop_goods` WHERE ( `id` IN ('4') ) LIMIT 1   [ RunTime:0.000939s ]
+SQL: SELECT DISTINCT  a.attr_id,a.attr_value,b.attr_name FROM shop_goods_attr a LEFT JOIN shop_attribute b ON b.id=a.attr_id  WHERE ( a.goods_id IN ('4') )  [ RunTime:0.001527s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000757s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001153s ]
+NOTIC: [8] Undefined variable: _show_nav D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 145 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: attr_1 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Undefined index: attr_2 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Undefined index: attr_3 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Undefined index: attr_4 D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Use of undefined constant X1 - assumed 'X1' D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 468 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001900s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002242s ]
+
+[ 2017-05-24T10:20:58+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003097s ]
+
+[ 2017-05-24T10:21:01+08:00 ] 127.0.0.1 /index.php/Home/search/goods_search/cat_id/16/brand_id/1-%E5%8D%8E%E4%B8%BA/price/200.00-233/attr_1/%E6%B8%85%E5%8D%8E-%E5%87%BA%E7%89%88%E7%A4%BE
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002230s ]
+SQL: DESCRIBE shop_category [ RunTime:0.019277s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001422s ]
+SQL: DESCRIBE shop_goods [ RunTime:0.019395s ]
+SQL: DESCRIBE shop_category [ RunTime:0.018897s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001412s ]
+SQL: SELECT `id` FROM `shop_goods` WHERE ( `id` IN (17,22,'16') )  [ RunTime:0.001197s ]
+SQL: DESCRIBE shop_goods_cat [ RunTime:0.018875s ]
+SQL: SELECT DISTINCT goods_id  id FROM `shop_goods_cat` WHERE ( `cat_id` = '16' )  [ RunTime:0.001723s ]
+NOTIC: [8] Undefined variable: brand_id D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 628 行.
+SQL: DESCRIBE shop_goods_attr [ RunTime:0.018442s ]
+NOTIC: [8] Undefined variable: attr_name D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 640 行.
+SQL: SELECT GROUP_CONCAT(goods_id) gids FROM `shop_goods_attr` WHERE ( `attr_id` = '1' ) AND ( `attr_value` = '清华-出版社' ) LIMIT 1   [ RunTime:0.001847s ]
+SQL: SELECT count(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM shop_goods a WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) LIMIT 1   [ RunTime:0.001254s ]
+SQL: SELECT a.id,a.goods_name,a.shop_price,a.mid_logo,sum(b.goods_number) x1 FROM shop_goods a LEFT JOIN shop_goods_order b ON (b.goods_id=a.id AND b.order_id IN(SELECT id FROM shop_order WHERE pay_status='是'))  WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) GROUP BY a.id ORDER BY X1 desc LIMIT 0,3   [ RunTime:0.002043s ]
+SQL: SELECT b.id,b.brand_name,b.logo FROM shop_goods a LEFT JOIN shop_brand b ON b.id=a.brand_id  WHERE ( a.id IN ('') ) AND ( a.brand_id <> 0 ) GROUP BY b.id  [ RunTime:0.001510s ]
+SQL: SELECT max(shop_price) max_price,min(shop_price) min_price FROM `shop_goods` WHERE ( `id` IN ('') ) LIMIT 1   [ RunTime:0.001247s ]
+SQL: SELECT DISTINCT  a.attr_id,a.attr_value,b.attr_name FROM shop_goods_attr a LEFT JOIN shop_attribute b ON b.id=a.attr_id  WHERE ( a.goods_id IN ('') )  [ RunTime:0.001796s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 220 行.
+NOTIC: [8] Undefined variable: _gaData D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 223 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000833s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001260s ]
+NOTIC: [8] Undefined variable: _show_nav D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 145 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Use of undefined constant X1 - assumed 'X1' D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 468 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 485 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001945s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002102s ]
+
+[ 2017-05-24T10:21:01+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002175s ]
+
+[ 2017-05-24T10:21:04+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002516s ]
+
+[ 2017-05-24T10:21:13+08:00 ] 127.0.0.1 /index.php/Home/search/goods_search/cat_id/16/brand_id/1-%E5%8D%8E%E4%B8%BA/price/200.00-233/attr_3/23-%E4%BD%9C%E8%80%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002742s ]
+SQL: DESCRIBE shop_category [ RunTime:0.018637s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001293s ]
+SQL: DESCRIBE shop_goods [ RunTime:0.018220s ]
+SQL: DESCRIBE shop_category [ RunTime:0.017734s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001229s ]
+SQL: SELECT `id` FROM `shop_goods` WHERE ( `id` IN (17,22,'16') )  [ RunTime:0.001193s ]
+SQL: DESCRIBE shop_goods_cat [ RunTime:0.017681s ]
+SQL: SELECT DISTINCT goods_id  id FROM `shop_goods_cat` WHERE ( `cat_id` = '16' )  [ RunTime:0.001559s ]
+NOTIC: [8] Undefined variable: brand_id D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 628 行.
+SQL: DESCRIBE shop_goods_attr [ RunTime:0.017091s ]
+NOTIC: [8] Undefined variable: attr_name D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 640 行.
+SQL: SELECT GROUP_CONCAT(goods_id) gids FROM `shop_goods_attr` WHERE ( `attr_id` = '3' ) AND ( `attr_value` = '23-作者' ) LIMIT 1   [ RunTime:0.001655s ]
+SQL: SELECT count(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM shop_goods a WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) LIMIT 1   [ RunTime:0.001070s ]
+SQL: SELECT a.id,a.goods_name,a.shop_price,a.mid_logo,sum(b.goods_number) x1 FROM shop_goods a LEFT JOIN shop_goods_order b ON (b.goods_id=a.id AND b.order_id IN(SELECT id FROM shop_order WHERE pay_status='是'))  WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) GROUP BY a.id ORDER BY X1 desc LIMIT 0,3   [ RunTime:0.001971s ]
+SQL: SELECT b.id,b.brand_name,b.logo FROM shop_goods a LEFT JOIN shop_brand b ON b.id=a.brand_id  WHERE ( a.id IN ('') ) AND ( a.brand_id <> 0 ) GROUP BY b.id  [ RunTime:0.001164s ]
+SQL: SELECT max(shop_price) max_price,min(shop_price) min_price FROM `shop_goods` WHERE ( `id` IN ('') ) LIMIT 1   [ RunTime:0.000983s ]
+SQL: SELECT DISTINCT  a.attr_id,a.attr_value,b.attr_name FROM shop_goods_attr a LEFT JOIN shop_attribute b ON b.id=a.attr_id  WHERE ( a.goods_id IN ('') )  [ RunTime:0.001482s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 220 行.
+NOTIC: [8] Undefined variable: _gaData D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 223 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000775s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001211s ]
+NOTIC: [8] Undefined variable: _show_nav D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 145 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Use of undefined constant X1 - assumed 'X1' D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 468 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 485 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002577s ]
+
+[ 2017-05-24T10:21:13+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002226s ]
+
+[ 2017-05-24T10:21:17+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002397s ]
+
+[ 2017-05-24T10:21:43+08:00 ] 127.0.0.1 /index.php/Home/search/goods_search/cat_id/16/brand_id/1-%E5%8D%8E%E4%B8%BA/price/200.00-233/attr_4/%E6%B2%B3%E5%8D%97-%E4%BB%A3%E7%90%86%E5%95%86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002144s ]
+SQL: DESCRIBE shop_category [ RunTime:0.018387s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001506s ]
+SQL: DESCRIBE shop_goods [ RunTime:0.018488s ]
+SQL: DESCRIBE shop_category [ RunTime:0.017746s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001180s ]
+SQL: SELECT `id` FROM `shop_goods` WHERE ( `id` IN (17,22,'16') )  [ RunTime:0.001197s ]
+SQL: DESCRIBE shop_goods_cat [ RunTime:0.018731s ]
+SQL: SELECT DISTINCT goods_id  id FROM `shop_goods_cat` WHERE ( `cat_id` = '16' )  [ RunTime:0.001523s ]
+NOTIC: [8] Undefined variable: brand_id D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 628 行.
+SQL: DESCRIBE shop_goods_attr [ RunTime:0.017674s ]
+NOTIC: [8] Undefined variable: attr_name D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 640 行.
+SQL: SELECT GROUP_CONCAT(goods_id) gids FROM `shop_goods_attr` WHERE ( `attr_id` = '4' ) AND ( `attr_value` = '河南-代理商' ) LIMIT 1   [ RunTime:0.001672s ]
+SQL: SELECT count(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM shop_goods a WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) LIMIT 1   [ RunTime:0.001086s ]
+SQL: SELECT a.id,a.goods_name,a.shop_price,a.mid_logo,sum(b.goods_number) x1 FROM shop_goods a LEFT JOIN shop_goods_order b ON (b.goods_id=a.id AND b.order_id IN(SELECT id FROM shop_order WHERE pay_status='是'))  WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) GROUP BY a.id ORDER BY X1 desc LIMIT 0,3   [ RunTime:0.001361s ]
+SQL: SELECT b.id,b.brand_name,b.logo FROM shop_goods a LEFT JOIN shop_brand b ON b.id=a.brand_id  WHERE ( a.id IN ('') ) AND ( a.brand_id <> 0 ) GROUP BY b.id  [ RunTime:0.001047s ]
+SQL: SELECT max(shop_price) max_price,min(shop_price) min_price FROM `shop_goods` WHERE ( `id` IN ('') ) LIMIT 1   [ RunTime:0.000869s ]
+SQL: SELECT DISTINCT  a.attr_id,a.attr_value,b.attr_name FROM shop_goods_attr a LEFT JOIN shop_attribute b ON b.id=a.attr_id  WHERE ( a.goods_id IN ('') )  [ RunTime:0.001773s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 220 行.
+NOTIC: [8] Undefined variable: _gaData D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 223 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000783s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001224s ]
+NOTIC: [8] Undefined variable: _show_nav D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 145 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Use of undefined constant X1 - assumed 'X1' D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 468 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 485 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001909s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002009s ]
+
+[ 2017-05-24T10:21:44+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002110s ]
+
+[ 2017-05-24T10:21:47+08:00 ] 127.0.0.1 /index.php/Home/search/goods_search/cat_id/16/brand_id/1-%E5%8D%8E%E4%B8%BA/price/200.00-233/attr_4/%E6%B2%B3%E5%8D%97-%E4%BB%A3%E7%90%86%E5%95%86/odby/price_desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002421s ]
+SQL: DESCRIBE shop_category [ RunTime:0.018044s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001276s ]
+SQL: DESCRIBE shop_goods [ RunTime:0.018732s ]
+SQL: DESCRIBE shop_category [ RunTime:0.017595s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001155s ]
+SQL: SELECT `id` FROM `shop_goods` WHERE ( `id` IN (17,22,'16') )  [ RunTime:0.000887s ]
+SQL: DESCRIBE shop_goods_cat [ RunTime:0.017267s ]
+SQL: SELECT DISTINCT goods_id  id FROM `shop_goods_cat` WHERE ( `cat_id` = '16' )  [ RunTime:0.001608s ]
+NOTIC: [8] Undefined variable: brand_id D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 628 行.
+SQL: DESCRIBE shop_goods_attr [ RunTime:0.016968s ]
+NOTIC: [8] Undefined variable: attr_name D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 640 行.
+SQL: SELECT GROUP_CONCAT(goods_id) gids FROM `shop_goods_attr` WHERE ( `attr_id` = '4' ) AND ( `attr_value` = '河南-代理商' ) LIMIT 1   [ RunTime:0.001642s ]
+SQL: SELECT count(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM shop_goods a WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) LIMIT 1   [ RunTime:0.001025s ]
+SQL: SELECT a.id,a.goods_name,a.shop_price,a.mid_logo,sum(b.goods_number) x1 FROM shop_goods a LEFT JOIN shop_goods_order b ON (b.goods_id=a.id AND b.order_id IN(SELECT id FROM shop_order WHERE pay_status='是'))  WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) GROUP BY a.id ORDER BY a.shop_price asc LIMIT 0,3   [ RunTime:0.001390s ]
+SQL: SELECT b.id,b.brand_name,b.logo FROM shop_goods a LEFT JOIN shop_brand b ON b.id=a.brand_id  WHERE ( a.id IN ('') ) AND ( a.brand_id <> 0 ) GROUP BY b.id  [ RunTime:0.001070s ]
+SQL: SELECT max(shop_price) max_price,min(shop_price) min_price FROM `shop_goods` WHERE ( `id` IN ('') ) LIMIT 1   [ RunTime:0.000861s ]
+SQL: SELECT DISTINCT  a.attr_id,a.attr_value,b.attr_name FROM shop_goods_attr a LEFT JOIN shop_attribute b ON b.id=a.attr_id  WHERE ( a.goods_id IN ('') )  [ RunTime:0.001381s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 220 行.
+NOTIC: [8] Undefined variable: _gaData D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 223 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000776s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001238s ]
+NOTIC: [8] Undefined variable: _show_nav D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 145 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Use of undefined constant X1 - assumed 'X1' D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 468 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 485 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001790s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002599s ]
+
+[ 2017-05-24T10:21:47+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002718s ]
+
+[ 2017-05-24T10:21:49+08:00 ] 127.0.0.1 /index.php/Home/search/goods_search/cat_id/16/brand_id/1-%E5%8D%8E%E4%B8%BA/price/200.00-233/attr_4/%E6%B2%B3%E5%8D%97-%E4%BB%A3%E7%90%86%E5%95%86/odby/addtime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002242s ]
+SQL: DESCRIBE shop_category [ RunTime:0.019929s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.002084s ]
+SQL: DESCRIBE shop_goods [ RunTime:0.024182s ]
+SQL: DESCRIBE shop_category [ RunTime:0.022364s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.003191s ]
+SQL: SELECT `id` FROM `shop_goods` WHERE ( `id` IN (17,22,'16') )  [ RunTime:0.001296s ]
+SQL: DESCRIBE shop_goods_cat [ RunTime:0.021911s ]
+SQL: SELECT DISTINCT goods_id  id FROM `shop_goods_cat` WHERE ( `cat_id` = '16' )  [ RunTime:0.002233s ]
+NOTIC: [8] Undefined variable: brand_id D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 628 行.
+SQL: DESCRIBE shop_goods_attr [ RunTime:0.020797s ]
+NOTIC: [8] Undefined variable: attr_name D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 640 行.
+SQL: SELECT GROUP_CONCAT(goods_id) gids FROM `shop_goods_attr` WHERE ( `attr_id` = '4' ) AND ( `attr_value` = '河南-代理商' ) LIMIT 1   [ RunTime:0.002439s ]
+SQL: SELECT count(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM shop_goods a WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) LIMIT 1   [ RunTime:0.001713s ]
+SQL: SELECT a.id,a.goods_name,a.shop_price,a.mid_logo,sum(b.goods_number) x1 FROM shop_goods a LEFT JOIN shop_goods_order b ON (b.goods_id=a.id AND b.order_id IN(SELECT id FROM shop_order WHERE pay_status='是'))  WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) GROUP BY a.id ORDER BY X1 desc LIMIT 0,3   [ RunTime:0.001704s ]
+SQL: SELECT b.id,b.brand_name,b.logo FROM shop_goods a LEFT JOIN shop_brand b ON b.id=a.brand_id  WHERE ( a.id IN ('') ) AND ( a.brand_id <> 0 ) GROUP BY b.id  [ RunTime:0.002899s ]
+SQL: SELECT max(shop_price) max_price,min(shop_price) min_price FROM `shop_goods` WHERE ( `id` IN ('') ) LIMIT 1   [ RunTime:0.003799s ]
+SQL: SELECT DISTINCT  a.attr_id,a.attr_value,b.attr_name FROM shop_goods_attr a LEFT JOIN shop_attribute b ON b.id=a.attr_id  WHERE ( a.goods_id IN ('') )  [ RunTime:0.003012s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 220 行.
+NOTIC: [8] Undefined variable: _gaData D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 223 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000788s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001208s ]
+NOTIC: [8] Undefined variable: _show_nav D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 145 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Use of undefined constant X1 - assumed 'X1' D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 468 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 485 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003168s ]
+
+[ 2017-05-24T10:21:49+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003233s ]
+
+[ 2017-05-24T10:21:51+08:00 ] 127.0.0.1 /index.php/Home/search/goods_search/cat_id/16/price/200.00-233/attr_4/%E6%B2%B3%E5%8D%97-%E4%BB%A3%E7%90%86%E5%95%86/odby/addtime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002566s ]
+SQL: DESCRIBE shop_category [ RunTime:0.018308s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001616s ]
+SQL: DESCRIBE shop_goods [ RunTime:0.020397s ]
+SQL: DESCRIBE shop_category [ RunTime:0.018023s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001430s ]
+SQL: SELECT `id` FROM `shop_goods` WHERE ( `id` IN (17,22,'16') )  [ RunTime:0.001037s ]
+SQL: DESCRIBE shop_goods_cat [ RunTime:0.018769s ]
+SQL: SELECT DISTINCT goods_id  id FROM `shop_goods_cat` WHERE ( `cat_id` = '16' )  [ RunTime:0.002042s ]
+NOTIC: [8] Undefined variable: brand_id D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 628 行.
+SQL: DESCRIBE shop_goods_attr [ RunTime:0.019340s ]
+NOTIC: [8] Undefined variable: attr_name D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 640 行.
+SQL: SELECT GROUP_CONCAT(goods_id) gids FROM `shop_goods_attr` WHERE ( `attr_id` = '4' ) AND ( `attr_value` = '河南-代理商' ) LIMIT 1   [ RunTime:0.001871s ]
+SQL: SELECT count(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM shop_goods a WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) LIMIT 1   [ RunTime:0.001884s ]
+SQL: SELECT a.id,a.goods_name,a.shop_price,a.mid_logo,sum(b.goods_number) x1 FROM shop_goods a LEFT JOIN shop_goods_order b ON (b.goods_id=a.id AND b.order_id IN(SELECT id FROM shop_order WHERE pay_status='是'))  WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) GROUP BY a.id ORDER BY X1 desc LIMIT 0,3   [ RunTime:0.001746s ]
+SQL: SELECT b.id,b.brand_name,b.logo FROM shop_goods a LEFT JOIN shop_brand b ON b.id=a.brand_id  WHERE ( a.id IN ('') ) AND ( a.brand_id <> 0 ) GROUP BY b.id  [ RunTime:0.001179s ]
+SQL: SELECT max(shop_price) max_price,min(shop_price) min_price FROM `shop_goods` WHERE ( `id` IN ('') ) LIMIT 1   [ RunTime:0.001113s ]
+SQL: SELECT DISTINCT  a.attr_id,a.attr_value,b.attr_name FROM shop_goods_attr a LEFT JOIN shop_attribute b ON b.id=a.attr_id  WHERE ( a.goods_id IN ('') )  [ RunTime:0.001780s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 220 行.
+NOTIC: [8] Undefined variable: _gaData D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 223 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000868s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001288s ]
+NOTIC: [8] Undefined variable: _show_nav D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 145 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 435 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Use of undefined constant X1 - assumed 'X1' D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 468 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 485 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003458s ]
+
+[ 2017-05-24T10:21:51+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001941s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002413s ]
+
+[ 2017-05-24T10:22:10+08:00 ] 127.0.0.1 /index.php/Home/search/goods_search/cat_id/16/price/200.00-233/attr_4/%E6%B2%B3%E5%8D%97-%E4%BB%A3%E7%90%86%E5%95%86/odby/addtime
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002143s ]
+SQL: DESCRIBE shop_category [ RunTime:0.018330s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001336s ]
+SQL: DESCRIBE shop_goods [ RunTime:0.018650s ]
+SQL: DESCRIBE shop_category [ RunTime:0.018928s ]
+SQL: SELECT * FROM `shop_category`  [ RunTime:0.001250s ]
+SQL: SELECT `id` FROM `shop_goods` WHERE ( `id` IN (17,22,'16') )  [ RunTime:0.001067s ]
+SQL: DESCRIBE shop_goods_cat [ RunTime:0.017804s ]
+SQL: SELECT DISTINCT goods_id  id FROM `shop_goods_cat` WHERE ( `cat_id` = '16' )  [ RunTime:0.001590s ]
+NOTIC: [8] Undefined variable: brand_id D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 628 行.
+SQL: DESCRIBE shop_goods_attr [ RunTime:0.017581s ]
+NOTIC: [8] Undefined variable: attr_name D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\GoodsModel.class.php 第 640 行.
+SQL: SELECT GROUP_CONCAT(goods_id) gids FROM `shop_goods_attr` WHERE ( `attr_id` = '4' ) AND ( `attr_value` = '河南-代理商' ) LIMIT 1   [ RunTime:0.001746s ]
+SQL: SELECT count(a.id) goods_count,GROUP_CONCAT(a.id) goods_id FROM shop_goods a WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) LIMIT 1   [ RunTime:0.001085s ]
+SQL: SELECT a.id,a.goods_name,a.shop_price,a.mid_logo,sum(b.goods_number) x1 FROM shop_goods a LEFT JOIN shop_goods_order b ON (b.goods_id=a.id AND b.order_id IN(SELECT id FROM shop_order WHERE pay_status='是'))  WHERE ( a.id = 0 ) AND (  (a.shop_price BETWEEN '200.00' AND '233' ) ) GROUP BY a.id ORDER BY X1 desc LIMIT 0,3   [ RunTime:0.001376s ]
+SQL: SELECT b.id,b.brand_name,b.logo FROM shop_goods a LEFT JOIN shop_brand b ON b.id=a.brand_id  WHERE ( a.id IN ('') ) AND ( a.brand_id <> 0 ) GROUP BY b.id  [ RunTime:0.001106s ]
+SQL: SELECT max(shop_price) max_price,min(shop_price) min_price FROM `shop_goods` WHERE ( `id` IN ('') ) LIMIT 1   [ RunTime:0.000898s ]
+SQL: SELECT DISTINCT  a.attr_id,a.attr_value,b.attr_name FROM shop_goods_attr a LEFT JOIN shop_attribute b ON b.id=a.attr_id  WHERE ( a.goods_id IN ('') )  [ RunTime:0.001452s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 220 行.
+NOTIC: [8] Undefined variable: _gaData D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Admin\Model\CategoryModel.class.php 第 223 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000787s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001223s ]
+NOTIC: [8] Undefined variable: _show_nav D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 145 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 435 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 451 行.
+NOTIC: [8] Use of undefined constant X1 - assumed 'X1' D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 468 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\lianxi\xiangmu\shop04_xiangmu4\Application\Runtime\Cache\Home\60cb6a7d5a1f98a69ad4038b9ea07a81.php 第 485 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002157s ]
+
+[ 2017-05-24T10:22:10+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003678s ]
+

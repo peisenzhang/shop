@@ -1,0 +1,266 @@
+##商品表
+create table if not exists `shop_goods`(
+id mediumint unsigned not null auto_increment comment 'ID',
+goods_name varchar(150) not null comment '商品名称',
+market_price decimal(10,2) not null comment '市场价格',
+shop_price decimal(10,2) not null comment '商品价格',
+goods_desc longtext comment '商品描述',
+is_on_sale enum('是','否') not null default '是' comment '是否上架',
+is_delete enum('是','否') not null default '否' comment '是否放到回收站',
+addtime datetime not null comment '添加时间',
+brand_id mediumint unsigned not null default '0' comment '品牌id',
+cat_id mediumint unsigned not null default ' 0' comment '分类id',
+primary key (id),
+key shop_price(shop_price),
+key addtime(addtime),
+key is_on_sale(is_on_sale),
+key brand_id(brand_id),
+key cat_id(cat_id)
+)engine=InnoDb  default charset=utf8 comment '商品表';
+alter table shop_goods add logo varchar(150) not null default '' comment '原图';
+alter table shop_goods add sm_logo varchar(150) not null default '' comment '小图';
+alter table shop_goods add mid_logo varchar(150) not null default '' comment '中图';
+alter table shop_goods add big_logo varchar(150) not null default '' comment '大图';
+alter table shop_goods add mbig_logo varchar(150) not null default '' comment '超大图';
+alter table `shop_goods` add type_id mediumint unsigned not null default 0 comment '类型id';
+alter table `shop_goods` add promote_price decimal(10,2) not null default ' 0.00' comment '促销价格';
+alter table `shop_goods` add promote_start_date datetime not null  comment '促销开始时间';
+alter table `shop_goods` add promote_end_date datetime not null  comment '促销结束时间';
+alter table `shop_goods` add is_new enum('是','否') not null default '否'  comment '是否新品';
+alter table `shop_goods` add is_hot enum('是','否') not null default '否'  comment '是否热卖';
+alter table `shop_goods` add is_best enum('是','否') not null default '否'  comment '是否精品';
+alter table `shop_goods` add key promote_price(promote_price);
+alter table `shop_goods` add key promote_start_date(promote_start_date);
+alter table `shop_goods` add key promote_end_date(promote_end_date);
+alter table `shop_goods` add key is_new(is_new);
+alter table `shop_goods` add key is_hot(is_hot);
+alter table `shop_goods` add key is_best(is_best);
+alter table `shop_goods` add is_floor enum('是', '否') not null default '否' comment '是否推荐到楼层';
+alter table `shop_goods` add sort_num tinyint unsigned not null default '100' comment '排序的数字'
+##品牌表
+create table if not exists `shop_brand`(
+id mediumint unsigned not null auto_increment comment 'Id',
+brand_name varchar(150) not null comment '品牌名字',
+brand_url varchar(150) not null default '' comment '品牌网址',
+logo varchar(150) not null default '' comment '品牌图片',
+primary key (id)
+)engine=InnoDb default charset=utf8 comment '品牌表';
+
+##会员级别表
+create table if not exists `shop_member_level`(
+id mediumint unsigned  not null auto_increment comment 'ID',
+level_name varchar(150) not null comment '级别名称',
+jifen_bottom mediumint unsigned not null comment '积分下限',
+jifen_top mediumint unsigned not null comment '积分上限',
+primary key (id)
+)engine=InnoDb default charset=utf8 comment '会员级别';
+##会员价格表
+create table if not exists `shop_membrer_price`(
+price mediumint unsigned not null comment '级别价格',
+level_id mediumint unsigned not null comment '级别id',
+goods_id mediumint unsigned not null comment '商品id'
+)engine=InnoDb default charset=utf8 comment '会员价格表';
+
+#商品相册
+create table if not exists `shop_goods_pic`(
+id mediumint unsigned not null auto_increment comment 'ID',
+pic varchar(150) not null comment '原图',
+sm_pic varchar(150) not null comment '小图',
+mid_pic varchar(150) not null comment '中图',
+big_pic varchar(150) not null comment '大图',
+goods_id mediumint not null comment '商品id',
+primary key (id),
+key goods_id(goods_id)
+)engine=InnoDb default charset=utf8 comment '商品相册表';
+
+
+#分类表
+create table `shop_category`(
+id mediumint unsigned not null auto_increment comment 'ID',
+cat_name varchar(150) not null comment '分类名称',
+parent_id mediumint unsigned not null default 0 comment '上级id|0：顶级分类',
+primary key (id)
+)engine=InnoDb default charset=utf8 comment '分类表';
+alter table `shop_category` add is_floor enum('是', '否') not null default '否' comment '是否推荐到楼层';
+#扩展分类表
+create table if not exists shop_goods_cat(
+goods_id mediumint unsigned not null comment '商品id',
+cat_id mediumint unsigned not null comment '分类id',
+key goods_id(goods_id),
+key cat_id(cat_id)
+)engine=InnoDb default charset=utf8 comment '扩展分类表';
+
+##商品类型表
+create table if not exists `shop_type`(
+id mediumint unsigned not null auto_increment comment 'ID',
+type_name varchar(150) not null comment '类型名称',
+primary key (id)
+)engine=InnoDb default charset=utf8 comment '商品类型表';
+##属性表
+create table if not exists `shop_attribute`(
+id mediumint unsigned not null auto_increment comment 'ID',
+attr_name varchar(150) not null comment '属性名称',
+attr_type enum('可选','唯一') not null comment '属性类型',
+attr_option_value varchar(150) not null default '' comment '属性可选值',
+type_id mediumint unsigned not null comment '类型id',
+primary key (id),
+key type_id(type_id)
+)engine= InnoDb default charset=utf8 comment '属性表';
+##商品属性表
+create table if not exists `shop_goods_attr`(
+id mediumint unsigned not null auto_increment comment 'ID',
+goods_id mediumint unsigned not null comment '商品id',
+attr_id mediumint unsigned not null comment '属性id',
+attr_value varchar(150) not null comment '属性值',
+primary key (id),
+key attr_id(attr_id),
+key goods_id(goods_id)
+)engine=InnoDb default charset=utf8 comment '商品-属性表';
+
+##商品库存量表
+create table if not exists `shop_goods_number`(
+goods_id mediumint not null comment 'ID',
+goods_attr_id mediumint unsigned not null comment '商品属性id',
+goods_number mediumint unsigned not null comment '商品库存量，如果有多个，就用程序拼成字符串',
+key goods_id(goods_id)
+)engine=InnoDb default charset=utf8 comment '商品库存量表';
+
+
+
+##权限表
+create table if not exists `shop_privilege`(
+id mediumint unsigned not null auto_increment comment 'ID',
+pri_name varchar(30) not null comment '权限名称',
+module_name varchar(30) not null default '' comment '模块名称',
+controller_name varchar(30) not null default '' comment '控制器名称',
+action_name varchar(30) not null default '' comment '方法名称',
+parent_id mediumint unsigned not null default 0 comment '上级id',
+primary key (id)
+)engine=InnoDb default charset=utf8 comment '权限表';
+##角色 -权限中间表
+create table if not exists `shop_role_pri`(
+pri_id mediumint unsigned not null comment '权限id',
+role_id mediumint unsigned not null comment '角色id',
+key pri_id(pri_id),
+key role_id(role_id)
+)engine=InnoDb default charset=utf8 comment '角色-权限中间表';
+##角色表
+create table if not exists `shop_role`(
+id mediumint unsigned not null auto_increment comment 'ID',
+role_name varchar(30) not null comment '角色名称',
+primary key (id)
+)engine=InnoDB default charset=utf8 comment '角色表';
+##角色-管理员表
+create table if not exists `shop_role_admin`(
+role_id mediumint unsigned not null comment '角色id',
+admin_id mediumint unsigned not null comment '管理员id',
+key role_id(role_id),
+key admin_id(admin_id)
+)engine=InnoDb default charset=utf8 comment '角色-管理员表';
+##管理员表
+create table if not exists `shop_admin`(
+id mediumint unsigned not null auto_increment comment 'ID',
+user_name varchar(30) not null comment '用户名',
+password varchar(32) not null comment '密码',
+primary key (id)
+)engine=InnoDb default charset=utf8 comment '管理员表';
+
+
+##会员表
+create table if not exists `shop_member`(
+id mediumint unsigned not null auto_increment comment 'ID',
+user_name varchar(30) not null comment '用户名',
+password char(32) not null comment '密码',
+face varchar(150) not null default '' comment '头像',
+jifen mediumint unsigned not null default 0 comment '积分',
+primary key (id)
+)engine=InnoDB default charset=utf8 comment '会员表';
+
+##购物车表
+create table if not exists `shop_cart`(
+id mediumint unsigned not null auto_increment comment 'ID',
+goods_id mediumint unsigned not null comment '商品id',
+goods_attr_id varchar(150) not null comment '商品属性id',
+goods_number mediumint unsigned not null comment '购买数量',
+member_id mediumint unsigned not null comment '会员ID',
+primary key (id),
+key member_id(member_id)
+)engine=InnoDB default charset=utf8 comment '购物车表';
+
+##订单表
+create table if not exists `shop_order`(
+id mediumint unsigned not null auto_increment comment 'ID',
+member_id mediumint unsigned not null comment '会员id',
+addtime int unsigned not null comment '下单时间',
+pay_status enum('是','否') not null default '否' comment '付款状态',
+pay_time int unsigned not null default '0' comment '付款时间',
+total_price decimal(10,2) not null comment '订单总价',
+shr_name varchar(30) not null comment '收货人姓名',
+shr_tel varchar(30) not null comment '收货人电话',
+shr_province varchar(30) not null comment '收货人省份',
+shr_city varchar(30) not null comment '收货人城市',
+shr_area varchar(30) not null comment '收货人地区',
+shr_address varchar(30) not null comment '收货人详细地址',
+post_status tinyint unsigned not null default '0' comment '发货状态，0：未发货1：已发货',
+post_number varchar(30) not null default '' comment '快递号',
+primary key (id),
+key member_id(member_id),
+key addtime(addtime)
+)engine=InnoDB default charset=utf8 comment '订单基本信息表';
+##商品—订单表
+create table if not exists `shop_goods_order`(
+id mediumint unsigned not null auto_increment comment 'ID',
+order_id mediumint unsigned not null comment '订单id',
+goods_id mediumint unsigned not null comment '商品id',
+goods_attr_id varchar(150) not null comment '商品属性id',
+goods_number mediumint unsigned not null comment '购买的数量',
+price decimal(10,2) not null comment '购买的价格',
+primary key (id),
+key order_id(order_id),
+key goods_id(goods_id)
+)engine=InnoDB default charset=utf8 comment '商品订单表';
+
+##评论表
+create table if not exists `shop_comment`(
+id mediumint unsigned not null auto_increment comment 'ID',
+goods_id mediumint unsigned not null comment '商品id',
+member_id mediumint unsigned not null comment '会员id',
+content varchar(200) not null comment '内容',
+addtime datetime not null comment '发表时间',
+star tinyint unsigned not null comment '分值',
+click_count smallint unsigned not null default '0' comment '有用的数字',
+primary key (id),
+key goods_id(goods_id),
+key member_id(member_id)
+)engine=InnoDB default charset=utf8 comment '评论表';
+##评论回复
+create table if not exists `shop_comment_reply`(
+id mediumint unsigned not null auto_increment comment 'ID',
+comment_id mediumint unsigned not null comment '评论id',
+member_id mediumint unsigned not null comment '会员id',
+content varchar(200) not null comment '回复内容',
+addtime datetime not null comment '回复时间',
+primary key (id),
+key comment_id(comment_id),
+key member_id(comment_id)
+)engine=InnoDB default charset=utf8 comment '评论回复表';
+##印象
+create table if not exists `shop_yinxiang`(
+id mediumint unsigned not null auto_increment comment 'ID',
+goods_id mediumint unsigned not null comment '商品id',
+yx_name varchar(30) not null comment '印象的名称',
+yx_count smallint unsigned not null default '1' comment '印象的次数',
+primary key (id),
+key goods_id(goods_id)
+)engine=InnoDB default charset=utf8 comment '印象表';
+
+
+
+
+type         id type_name
+attribute    id attr_name attr_type  attr_option_vale type_id
+good_attr    id  goods_id attr_id    attr_value
+goods_number goods_id  goods_attr_id  goods_number
+
+comment:   id  goods_id  member_id   content addtime  star  click_count
+comment_reply: id   comment_id  member_id content addtime
